@@ -13,7 +13,7 @@ class ModBuilder:
             self.modFolderDir = os.path.realpath(arg.strip())
 
     if self.modFolderDir == None:
-        self.modFolderDir = "{0}/Factorio/mods/".format(os.getenv('APPDATA'))
+        self.modFolderDir = "{0}/Factorio/devmods/".format(os.getenv('APPDATA'))
 
 
   def __isReleased(self, modName):
