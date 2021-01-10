@@ -159,22 +159,18 @@ end
 
 script.on_event(defines.events.on_research_finished, function(event)
   local research = event.research
-  if research.name == "angels-construction-robots" then
-    local unlocks = {
-      "undo",
-      "copy",
-      "cut",
-      "paste",
-      "import-string",
-      "give-blueprint",
-      "give-blueprint-book",
-      "give-deconstruction-planner",
-      "give-upgrade-planner"
-    }
-    for _, shortcut in pairs(unlocks) do
-      unlock(event.research.force, shortcut)
-    end
-  end
+  -- if research.name == "angels-construction-robots" then
+  --   local unlocks = {
+  --     "undo",
+  --     "copy",
+  --     "cut",
+  --     "paste",
+  --     "import-string"
+  --   }
+  --   for _, shortcut in pairs(unlocks) do
+  --     unlock(event.research.force, shortcut)
+  --   end
+  -- end
 
   local ghosting = {
     ["angels-ghosting-construction-robots"] = true,
